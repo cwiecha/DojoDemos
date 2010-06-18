@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Image Resize Demo using dojo.Stateful APIs</title>
+<!-- dojo reset -->
+<link rel="stylesheet" href="dojotoolkit/dojo/resources/dojo.css">  <!-- TODO: Fixup path for actual location -->
+
+<!-- theme for claro or some other theme -->
+<link rel="stylesheet" href="dojotoolkit/dijit/themes/claro/claro.css">  <!-- TODO: Fixup path for actual location -->
+
+</head>
+
+<body class="claro">
+
+<!-- ULTIMATELY THERE MAY BE CHROME AROUND THE "demoContainers", SO ISOLATE THE DEMO TO THIS REGION -->
+<div id="demoContainer">
+<!-- DEMO MARKUP SHOULD GO HERE -->
+
+ 	<h1>Resize Image</h1>
+ 		<table>
+ 			<tr>
+ 				<td style="vertical-align: top;">	
+	  			<h3>Image and Resize inputs...</h3>
+	  
+	  			<table>
+	  				<tr>
+	  					<td><label for="initialHeight">Initial Height:</label></td>
+	  					<td><input id="initialHeight" dojoType="dijit.form.NumberTextBox" readonly="true"></input></td>
+	  				</tr>
+	  				<tr>
+	  					<td><label for="initialWidth">Initial Width:</label></td>
+	  					<td><input id="initialWidth" dojoType="dijit.form.NumberTextBox" readonly="true"></input></td>
+	  				</tr>
+	  				<tr>
+	  					<td><label for="preserveRatio">Preserve ratio:</label></td>
+	  					<td><input id="preserveRatio" dojoType="dijit.form.CheckBox"></input></td>
+	  				</tr>
+	  			</table>
+	  			
+ 	  			
+ 	  			<h3>Image Resize controls...</h3>
+      		
+	  			
+	  			<table>
+	  				<tr>
+	  					<td><label for="absoluteHeight">Absolute Height:</label></td>
+	  					<td><input id="absoluteHeight" dojoType="dijit.form.NumberTextBox"></input></td>
+	  				</tr>
+	  				<tr>
+	  					<td><label for="absoluteWidth">Absolute Width:</label></td>
+	  					<td><input id="absoluteWidth" dojoType="dijit.form.NumberTextBox"></input></td>
+	  				</tr>
+	  				<tr>
+	  					<td><label for="relativeHeight">Relative Height:</label></td>
+	  					<td><input id="relativeHeight" dojoType="dijit.form.NumberTextBox"></input></td>
+	  				</tr>
+	  				<tr>
+	  					<td><label for="relativeWidth">Relative Width:</label></td>
+	  					<td><input id="relativeWidth" dojoType="dijit.form.NumberTextBox"></input></td>
+	  				</tr>
+	  			</table>
+	  			</td>
+	  			<td>
+	  			<h3>Resulting image...</h3>
+	  			<img id="theImage" src="images/test.jpg"/>
+	  			</td>
+	  		</tr>
+	  	</table>
+</div>
+
+<!-- LINK TO DOJO AT THE END OF THE BODY -->
+<!-- TODO: Fixup path for actual location -->
+<script type="text/javascript" src="dojotoolkit/dojo/dojo.js" djConfig="parseOnLoad: true, djConfig: true"></script>
+
+<!--
+DON"T PUT OTHER LINKS ASIDE FROM 'layer.js' IN HERE. ALL OF YOUR REQUIRES SHOULD EXIST
+IN THAT FILE. IT CAN ALSO PULL IN CODE THAT SHOULD RUN onReady
+-->
+<script type="text/javascript" src="layer.js"></script>
+</body>
+</html>
+
