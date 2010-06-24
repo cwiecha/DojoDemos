@@ -1,1 +1,0 @@
-({"descending":"Φθίνουσα","ascending":"Αύξουσα","nestedSort":"Ένθετη ταξινόμηση","unsorted":"Να μην ταξινομηθεί αυτή η στήλη","singleSort":"Απλή ταξινόμηση","sortingState":"${0} - ${1}"})
